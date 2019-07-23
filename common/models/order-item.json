@@ -1,0 +1,29 @@
+{
+  "name": "OrderItem",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "cartItem": {
+      "type": "belongsTo",
+      "model": "CartItem",
+      "foreignKey": ""
+    },
+    "order": {
+      "type": "belongsTo",
+      "model": "Order",
+      "foreignKey": ""
+    },
+    "transactions": {
+      "type": "hasOne",
+      "model": "Transaction",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
